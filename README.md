@@ -31,5 +31,43 @@ Click on each lab to view detailed step-by-step guides:
 - Practiced hybrid cloud integration, monitoring, and resilience testing
 
 ---
+```mermaid
+flowchart LR
+    subgraph Cloud[Oracle Cloud Infrastructure]
+        OCI_VM[Ubuntu 24.04 Cloud Server]
+        Cloud_Storage[Cloud Storage & SQL]
+        OCI_VPN[VPN Gateway]
+    end
+
+    subgraph Local[Local VMware / WSL Environment]
+        Kali_VM[Kali Linux 2025.1]
+        Win_VM[Windows Server 2025 / Windows 11]
+        Ubuntu_VM[Ubuntu 24.04]
+        Metasploitable[Metasploitable 2]
+    end
+
+    subgraph Security[Monitoring & Automation]
+        Splunk[Splunk SIEM & SOAR]
+        Wazuh[Wazuh HIDS]
+        Terraform[Terraform Automation]
+        n8n[n8n Workflows]
+    end
+
+    OCI_VM --> Cloud_Storage
+    OCI_VM --> OCI_VPN
+    OCI_VPN --> Local
+    Local --> Kali_VM
+    Local --> Win_VM
+    Local --> Ubuntu_VM
+    Local --> Metasploitable
+    Kali_VM --> Security
+    Win_VM --> Security
+    Ubuntu_VM --> Security
+    Cloud_Storage --> Security
+    Terraform --> Local
+    Terraform --> Cloud
+    n8n --> Security
+```
+---
 
 > This repository serves as a **hands-on portfolio** demonstrating real-world cloud deployment, automation, and security skills.
