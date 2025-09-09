@@ -1,58 +1,35 @@
-# Cloud-Security-Labs
----
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-![GitHub last commit](https://img.shields.io/github/last-commit/Sree-Ajitha/Cloud-Security-Labs)  
-![GitHub repo size](https://img.shields.io/github/repo-size/Sree-Ajitha/Cloud-Security-Labs)
-
----
 # ☁️ Cloud Security Labs
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Sree-Ajitha/Cloud-Security-Labs)  
+![GitHub repo size](https://img.shields.io/github/repo-size/Sree-Ajitha/Cloud-Security-Labs)  
+![GitHub issues](https://img.shields.io/github/issues/Sree-Ajitha/Cloud-Security-Labs)  
+
+## 🎯 Overview
 Hands-on labs for **Google Cloud Associate Cloud Engineer training**, focused on deploying, securing, and automating cloud infrastructure. Labs are structured for **practical experience** in real-world scenarios.
 
 ---
 
-## 🧪 Lab Highlights
-### Core Labs
-- **Compute & Storage:** VM deployment, Cloud Storage buckets, Cloud SQL integration  
-- **Networking:** VPC creation, peering, firewall rules, subnet segmentation  
-- **Identity & Access:** IAM roles, service accounts, RBAC implementation  
-- **Automation & IaC:** Terraform modules, managing infrastructure as code  
-- **Security & Monitoring:** VPC security, BeyondCorp Enterprise, Cloud Armor  
-- **Scaling & Load Balancing:** HTTP/Internal Load Balancers, autoscaling, Pub/Sub messaging  
+## 📂 Lab Modules & Links
+Click on each lab to view detailed step-by-step guides:
 
-> Each lab has an extended write-up in subpart MD files:  
-> e.g., `01_Compute_Storage.md`, `02_Networking.md`, `03_IAM_Access.md`, etc.
+| Lab | Description | Badge |
+|-----|------------|-------|
+| [01 – Compute & Storage](01_Compute_Storage.md) | VM deployment, Cloud Storage, Cloud SQL integration | ![Compute](https://img.shields.io/badge/Compute-Storage-blue) |
+| [02 – Networking](02_Networking.md) | VPC, subnets, firewall rules, VPC peering | ![Networking](https://img.shields.io/badge/Networking-Secure-green) |
+| [03 – IAM & Access](03_IAM_Access.md) | Service accounts, RBAC, IAM policies | ![IAM](https://img.shields.io/badge/IAM-Security-orange) |
+| [04 – Security & Monitoring](04_Security_Monitoring.md) | Cloud Armor, BCE, logging & alerting | ![Monitoring](https://img.shields.io/badge/Security-Monitoring-red) |
+| [05 – Automation](05_Automation.md) | Terraform, n8n workflows, IaC | ![Automation](https://img.shields.io/badge/Automation-IaC-purple) |
+| [06 – Load Balancing & Scaling](06_Load_Balancing.md) | HTTP/Internal LB, autoscaling, Pub/Sub | ![Scaling](https://img.shields.io/badge/Scaling-High%20Availability-yellow) |
 
 ---
 
 ## 🏆 Key Achievements
 - Earned **Google Cloud Associate Cloud Engineer** certification  
-- Gained **hands-on experience** with cloud networking, IAM, and security  
-- Deployed **secure, scalable, and automated cloud environments**  
-- Integrated automation with **Terraform & n8n** workflows  
-- Applied **best practices for hybrid cloud deployment**  
+- Deployed **secure, scalable cloud infrastructure**  
+- Automated workflows and infrastructure provisioning using **Terraform & n8n**  
+- Applied **zero-trust principles and cloud security best practices**  
+- Practiced hybrid cloud integration, monitoring, and resilience testing
 
 ---
 
-## 📂 Subpart Files
-| Lab | Description |
-|-----|------------|
-| `01_Compute_Storage.md` | Compute Engine, Cloud Storage, Cloud SQL setup |
-| `02_Networking.md` | VPC, subnets, peering, firewall rules |
-| `03_IAM_Access.md` | Service accounts, roles, RBAC implementation |
-| `04_Security_Monitoring.md` | Security hardening, Cloud Armor, BCE setup |
-| `05_Automation.md` | Terraform modules, workflow automation |
-| `06_Load_Balancing.md` | HTTP/Internal load balancing, autoscaling, Pub/Sub |
-
----
-## 🚧 Development Roadmap
-
-- [x] Initial repo setup
-- [ ] Uploaded base scripts
-- [ ] Add full documentation
-- [ ] Create Splunk dashboards
-- [ ] Write blog post walkthrough
-
-> **Note:** This project is currently **In Progress**.  
-> New features, updated scripts, and documentation will be added over the coming weeks.  
-> Feedback and collaboration are welcome.
+> This repository serves as a **hands-on portfolio** demonstrating real-world cloud deployment, automation, and security skills.
