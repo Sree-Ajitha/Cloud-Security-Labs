@@ -24,3 +24,11 @@ Implement security hardening, monitoring, and automated alerting in cloud enviro
 - Hardened cloud infrastructure against attacks
 - Configured real-time monitoring and alerting
 - Applied zero-trust security principles
+
+---
+```mermaid
+flowchart LR
+    VPC[VPC / Subnets] --> CloudArmor[Cloud Armor]
+    CloudArmor --> BCE[BeyondCorp Enterprise]
+    BCE --> Logging[Stackdriver Logging & Alerts]
+```
