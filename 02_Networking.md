@@ -28,3 +28,13 @@ Design and implement secure VPCs, subnets, firewall rules, and network peering f
 - Implemented secure, segmented network
 - Applied principle of least privilege for traffic control
 - Gained practical knowledge of hybrid cloud connectivity
+
+---
+```mermaid
+flowchart LR
+    VPC[VPC] --> Subnet_Public[Public Subnet]
+    VPC --> Subnet_Private[Private Subnet]
+    Subnet_Public --> Firewall[Firewall Rules]
+    Subnet_Private --> NAT[NAT Gateway]
+    VPC --> VPC_Peering[VPC Peering Connection]
+```
