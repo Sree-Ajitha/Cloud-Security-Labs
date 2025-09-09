@@ -28,3 +28,11 @@ Deploy virtual machines, configure Cloud Storage, and integrate Cloud SQL to sim
 - Successfully deployed scalable compute resources
 - Configured secure cloud storage with access controls
 - Practiced VM-to-database connectivity and testing
+
+---
+```mermaid
+flowchart LR
+    VM[Compute Engine VM] --> CloudSQL[Cloud SQL]
+    VM --> Bucket[Cloud Storage Bucket]
+```
+
