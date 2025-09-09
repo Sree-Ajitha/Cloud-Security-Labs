@@ -1,4 +1,4 @@
-# Lab 05 – Automation & Infrastructure as Code
+# Lab 05 – Automation & Infrastructure As A Code
 
 ## 🎯 Objective
 Automate cloud deployment using Terraform and workflow tools for repeatable, secure infrastructure.
@@ -24,3 +24,11 @@ Automate cloud deployment using Terraform and workflow tools for repeatable, sec
 - Practiced end-to-end automation with Terraform
 - Achieved repeatable, version-controlled cloud deployments
 - Integrated workflow automation for efficiency and monitoring
+---
+```mermaid
+flowchart LR
+    Terraform[Terraform Modules] --> Cloud[Cloud Infrastructure]
+    Terraform --> Local[Local VMs]
+    n8n[n8n Automation] --> Cloud
+    n8n --> Local
+```
