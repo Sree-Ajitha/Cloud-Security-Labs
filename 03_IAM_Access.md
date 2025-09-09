@@ -24,3 +24,10 @@ Configure secure access using IAM roles, service accounts, and role-based access
 - Secured cloud resources via IAM and RBAC
 - Gained experience in access management and policy enforcement
 - Applied best practices for cloud identity security
+---
+```mermaid
+flowchart LR
+    User[User / Admin] -->|Role Assignment| IAM[IAM Role]
+    IAM --> ServiceAccount[Service Account]
+    ServiceAccount --> Resource[Cloud Resource]
+```
