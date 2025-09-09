@@ -24,3 +24,11 @@ Configure load balancing, autoscaling, and message distribution for highly avail
 - Achieved high availability with automated load balancing
 - Practiced dynamic scaling for resource efficiency
 - Integrated messaging for resilient cloud workflows
+
+---
+```mermaid
+flowchart LR
+    LB[HTTP / Internal Load Balancer] --> Backend[Instance Group]
+    Backend --> Autoscale[Autoscaling Policy]
+    Backend --> PubSub[Pub/Sub Messaging]
+```
